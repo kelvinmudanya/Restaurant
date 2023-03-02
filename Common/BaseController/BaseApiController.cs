@@ -24,6 +24,7 @@ namespace Restaurant.Common.BaseController
                 ActionPerformed.Delete => Ok(new { message = "Record deleted successfully" }),
                 ActionPerformed.Update => Ok(new { message = "Record updated successfully" }),
                 ActionPerformed.Upload => Ok(new { message = "File uploaded successfully" }),
+                
                 _ => BadRequest()
             };
 

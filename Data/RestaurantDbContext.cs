@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Restaurant.Domain;
+using Restaurant.Domain.Context;
 
 namespace Restaurant.Data
 {

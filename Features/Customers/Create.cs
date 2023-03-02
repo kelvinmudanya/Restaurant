@@ -4,7 +4,7 @@ using FluentValidation;
 using MediatR;
 using Restaurant.ViewModels;
 using Restaurant.Data;
-using Restaurant.Domain;
+using Restaurant.Domain.Context;
 
 namespace Restaurant.Features.Customers
 {
@@ -43,7 +43,6 @@ namespace Restaurant.Features.Customers
                 }
                 catch (Exception ex)
                 {
-
                     Console.WriteLine("The request could not be send" + ex.Message);
                 }
 

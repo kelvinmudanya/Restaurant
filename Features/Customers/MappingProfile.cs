@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Restaurant.Domain;
+using Restaurant.Domain.Context;
 
 namespace Restaurant.Features.Customers
 {
@@ -8,6 +8,9 @@ namespace Restaurant.Features.Customers
         public MappingProfile()
         {
             CreateMap<Create.Command, Customer>();
+            CreateMap<Customer, List.CustomerViewModel>();
+            CreateMap<Update.Command, Customer>(); 
+            CreateMap<Customer, Details.CustomerViewModel>();   
         }
     }
 }

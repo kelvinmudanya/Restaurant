@@ -42,7 +42,7 @@ namespace Restaurant.Common
         {
             services.AddDbContext<RestaurantDbContext>(x =>
             {
-                x.UseNpgsql(configuration.GetConnectionString("MainContext"))
+                x.UseNpgsql(configuration.GetConnectionString("DevConnection"))
                 .UseSnakeCaseNamingConvention();
             });
             var idpOptions = configuration.GetSection("Idp");

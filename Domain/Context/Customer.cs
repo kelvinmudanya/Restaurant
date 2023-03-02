@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 
-namespace Restaurant.Domain
+namespace Restaurant.Domain.Context
 {
-    public class Customer:BaseEntity
+    public class Customer : BaseEntity
     {
         //using column type to ensure during migrations maximum characters are not initialized for name
         public string Name { get; set; }
